@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p>New HNG Task</p>
+    <div class="profile-card">
+        <img src="img/img2.jpg" data-testid="profilePicture" class="profile-pic">
+        
+        <h2 data-testid="fullName">Precious Heart</h2>
+        <p class="job-title" data-testid="jobTitle">Front-end developer</p>
+        
+        <p class="bio" data-testid="shortBio">
+            An Aspiring front-end developer, business owner, and professional video editor.
+            Passionate about creating engaging digital experiences, I blend creativity with technology to build user-friendly websites while mastering the art of video editing. Constantly learning, evolving, I aim to push boundaries in both tech and media and I'm excited to grow, innovate and make an impact in the tech and business world.
+        </p>
+
+        <p class="location" data-testid="currentLocation">📍Nigeria , lagos</p>
+        <p class="email">✉ <a href="#" data-testid="emailAddress">azeezahabdulrazaq0@gmail.com</a></p>
+        <div class="social-links" data-testid="socialLinks">
+            🔗 <a href="https://linkedin.com/in/wolfeblackspent" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/wolfeblackspent" target="_blank">GitHub</a> |
+            <a href="https://twitter.com/wolfeblackspent" target="_blank">Twitter</a>
+        </div>
+
+        <p class="time">
+            🕒 UTC Time: <span id="current-time" data-testid="currentTimeUTC"></span>
+        </p>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

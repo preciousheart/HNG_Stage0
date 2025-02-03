@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(45deg, #ffff, #8b00ff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 90%;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .profile-card:hover{
+    transform: scale(1.05);
+  }
+  
+  .profile-pic {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  
+  h2 {
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 22px;
+  }
+  
+  .job-title {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .bio {
+    font-size: 13px;
+    color: #666;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    
+  }
+  
+  .location, .email, .social-links, .time {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  
+  a {
+    color: #8b00ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 📌 Responsive Design */
+  @media (max-width: 400px) {
+    .profile-card {
+        padding: 15px;
+        width: 100%;
+    }
+  
+    h2 {
+        font-size: 20px;
+    }
+  
+    .job-title, .bio, .location, .email, .social-links, .time {
+        font-size: 12px;
+    }
+  }
